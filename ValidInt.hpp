@@ -1,5 +1,5 @@
 /************************************************
- * Program Name: ValidInput.hpp
+ * Program Name: ValidInt.hpp
  * Author: Elizabeth Donato
  * Date: 2-9-2018
  * Description: This is the header file
