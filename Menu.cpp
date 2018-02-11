@@ -38,11 +38,9 @@ Menu::Menu()
  * This function displays a menu of choices     *
  * for the user and gets the user's choice.     *
  *                                              *
- * Accepts: bool (Determines if this is the     *
- *          first time the program has been     *
- *          run)                                *
+ * Accepts: Nothing                             *
  *                                              *
- * Returns: int (User's choice)                 *
+ * Returns: int (user's choice)                 *
  *                                              *
 *************************************************/
 int Menu::get_choice()
