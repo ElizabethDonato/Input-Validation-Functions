@@ -53,10 +53,12 @@ bool ValidInt::is_valid_int (std::string inputString)
         std::cout << "\nYou have not entered a valid integer." << std::endl;
    }
 
-   //If input is an integer, boolean value is changed to indicate valid input.
+   //If input is an integer, boolean value is changed to indicate valid input
+   //and value in string is converted to integer.
    else
    {
         goodInput = true;
+        testInt = std::stoi(inputString);
    }
 
    return goodInput;
@@ -91,8 +93,28 @@ bool ValidInt::is_valid_int_range (std::string inputString, int lowValue, int hi
    else
    {
         //If integer input is within specified range, boolean value is changed to indicate valid inupt
+        //and value in string is converted to integer.
         goodInput = true;
+        testInt = std::stoi(inputString);
    }
 
    return goodInput;
 }
+
+/*************************************************
+ *      ValidInt::get_int                       *
+ *                                              *
+ * This function returns the user-entered       *
+ * integer.                                     *
+ *                                              *
+ * Accepts: Nothing                             *
+ *                                              *
+ * Returns: int (validated, user-entered value) *
+*************************************************/
+int ValidInt::get_int()
+{
+   return testInt;
+}
+
+
+
