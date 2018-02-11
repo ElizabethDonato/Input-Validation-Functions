@@ -28,6 +28,7 @@ class Menu
    public:
         Menu();                 //Constructor
         int get_choice();       //Displays appropriate menu and obtains user choice
+        ~Menu() {};             //Destructor
 };
 #endif
 ~
