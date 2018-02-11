@@ -53,10 +53,12 @@ bool ValidDouble::is_valid_double (std::string inputString)
         std::cout << "\nYou have not entered a valid number." << std::endl;
    }
 
-   //If input is a double, boolean value is changed to indicate valid input.
+   //If input is a double, boolean value is changed to indicate valid input
+   //and value in string is converted to double.
    else
    {
         goodInput = true;
+        testDouble = std::stod(inputString);
    }
 
    return goodInput;
@@ -91,11 +93,28 @@ bool ValidDouble::is_valid_double_range (std::string inputString, double lowValu
    else
    {
         //If double input is within specified range, boolean value is changed to indicate valid inupt
+        //and value in string is converted to double.
         goodInput = true;
+        testDouble = std::stod(inputString);
    }
 
    return goodInput;
 }
-                               
+
+/*************************************************
+ *      ValidDouble::get_double                 *
+ *                                              *
+ * This function returns the user-entered       *
+ * double value.                                *
+ *                                              *
+ * Accepts: Nothing                             *
+ *                                              *
+ * Returns: double (validated, user-entered)    *
+*************************************************/
+double ValidDouble::get_double()
+{
+   return testDouble;
+}
+
 
 
