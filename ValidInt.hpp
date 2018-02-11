@@ -1,5 +1,5 @@
 /************************************************
- * Program Name: ValidInt.hpp
+ * Program Name: ValidInput.hpp
  * Author: Elizabeth Donato
  * Date: 2-9-2018
  * Description: This is the header file
@@ -22,6 +22,7 @@ class ValidInt
         ValidInt();
         bool is_valid_int(std::string);
         bool is_valid_int_range(std::string, int, int);
+        int get_int();
         ~ValidInt() {};
 };
 
