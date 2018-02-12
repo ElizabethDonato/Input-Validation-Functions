@@ -32,7 +32,7 @@ UserInput::UserInput()
    testString = "";
    validInput = false;
    lowest = 0;
-   highest = 10;
+   highest = 500000;
 }
 /*************************************************
  *      UserInput::get_input                    *
@@ -59,3 +59,33 @@ int UserInput::get_input()
 
    return myInt;
 }
+
+/*************************************************
+ *      UserInput::get_input                    *
+ *                                              *
+ * This function gets input from the user as    *
+ * determined by the client program.            *
+ *                                              *
+ * Accepts: int (low limit)                     *
+ *          int (high limit)                    *
+ *                                              *
+ * Returns: int (user-entered input)            *
+*************************************************/
+int UserInput::get_input(int low, int high)
+{
+   //Gets and validates user input
+   while (!validInput)
+   {
+        lowest = low;
+        highest = high;
+        std::cout << "\nPlease enter an integer between " << low << " and " << high << ":  ";
+        std::getline(std::cin, testString);
+        validInput = userInt.is_valid_int_range(testString, lowest, highest);
+   }
+
+   //Returns user's input to client program as an integer
+   myInt = userInt.get_int();
+
+   return myInt;
+}
+
