@@ -20,7 +20,7 @@ class UserInput
 {
    private:
         int myInt;              //User-entered input of some sort
-        ValidInt userInput;     //Used for input validation
+        ValidInt userInt;       //Used for input validation
         std::string testString; //Used for input validation
         bool validInput;        //Used to indicate if valid input has been entered
         int lowest;             //Lowest number in specified range
