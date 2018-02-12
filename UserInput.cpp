@@ -46,6 +46,8 @@ UserInput::UserInput()
 *************************************************/
 int UserInput::get_input()
 {
+   validInput = false;
+   
    //Gets and validates user input
    while (!validInput)
    {
@@ -73,6 +75,8 @@ int UserInput::get_input()
 *************************************************/
 int UserInput::get_input(int low, int high)
 {
+   validInput = false;
+   
    //Gets and validates user input
    while (!validInput)
    {
