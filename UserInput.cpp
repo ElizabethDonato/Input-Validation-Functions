@@ -51,11 +51,11 @@ int UserInput::get_input()
    {
         std::cout << "\nPlease enter an integer:  ";
         std::getline(std::cin, testString);
-        validInput = userInput.is_valid_int_range(testString, lowest, highest);
+        validInput = userInt.is_valid_int_range(testString, lowest, highest);
    }
 
    //Returns user's input to client program as an integer
-   myInt = userInput.get_int();
+   myInt = userInt.get_int();
 
    return myInt;
 }
