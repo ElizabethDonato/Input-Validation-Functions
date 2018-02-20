@@ -1,5 +1,5 @@
 /************************************************
- * Program Name: menu.cpp
+ * Program Name: Menu.cpp
  * Author: Elizabeth Donato
  * Date: 1-20-2018
  * Description: This is the implementation file
@@ -37,6 +37,9 @@ Menu::Menu()
  *                                              *
  * This function displays a menu of choices     *
  * for the user and gets the user's choice.     *
+ * The function could be modified to accept     *
+ * a parameter indicating which version of the  *
+ * menu should be displayed.                    *
  *                                              *
  * Accepts: Nothing                             *
  *                                              *
