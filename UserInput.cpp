@@ -62,6 +62,9 @@ int UserInput::get_input_range(int low, int high)
 
    //Returns user's input to client program as an integer
    myInt = userInt.get_int();
+   
+   //Resets boolean variable so function can be used again
+   validInput = false;
 
    return myInt;
 }
@@ -91,6 +94,9 @@ int UserInput::get_input()
 
    //Returns user's input to client program as an integer
    myInt = userInt.get_int();
+
+   //Resets boolean variable so function can be used again
+   validInput = false;
 
    return myInt;
 }
