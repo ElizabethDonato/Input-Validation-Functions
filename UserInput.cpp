@@ -39,6 +39,9 @@ UserInput::UserInput()
  *                                              *
  * This function gets input within a specified  *
  * range from the user.                         *
+ * This function can be modified to check the   *
+ * validity of a floating point value by        *
+ * using the is_valid_double_range function.    *
  *                                              *
  * Accepts: int (lowest value)                  *
  *          int (highest value)                 *
@@ -68,6 +71,9 @@ int UserInput::get_input_range(int low, int high)
  *                                              *
  * This function gets input with no range       *
  * from the user.                               *
+ * This function can be modified to check the   *
+ * validity of a floating point value by        *
+ * using the is_valid_double function.          *
  *                                              *
  * Returns: int (user-entered input)            *
 *************************************************/
