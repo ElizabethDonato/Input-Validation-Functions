@@ -45,7 +45,7 @@ UserInput::UserInput()
  *                                              *
  * Returns: int (user-entered input)            *
 *************************************************/
-int UserInput::get_input(int low, int high)
+int UserInput::get_input_range(int low, int high)
 {
    lowest = low;
    highest = high;
