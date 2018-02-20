@@ -19,16 +19,17 @@
 class UserInput
 {
    private:
-        int myInt;              //User-entered input of some sort
-        ValidInt userInt;       //Used for input validation
-        std::string testString; //Used for input validation
-        bool validInput;        //Used to indicate if valid input has been entered
-        int lowest;             //Lowest number in specified range
-        int highest;            //Highest number in specified range
+        int myInt;                        //User-entered input of some sort
+        ValidInt userInt;                 //Used for input validation
+        std::string testString;           //Used for input validation
+        bool validInput;                  //Used to indicate if valid input has been entered
+        int lowest;                       //Lowest number in specified range
+        int highest;                      //Highest number in specified range
 
    public:
-        UserInput();            //Constructor
-        int get_input();
-        ~UserInput() {};        //Destructor
+        UserInput();                      //Constructor
+        int get_intput_range(int, int);   //Gets input in a specified range
+        int get_input();                  //Gets input with no specified range
+        ~UserInput() {};                  //Destructor
 };
 #endif
