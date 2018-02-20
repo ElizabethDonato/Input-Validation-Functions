@@ -1,5 +1,5 @@
 /************************************************
- * Program Name: menu.hpp
+ * Program Name: Menu.hpp
  * Author: Elizabeth Donato
  * Date: 1-20-2018
  * Description: This is the header file for the
