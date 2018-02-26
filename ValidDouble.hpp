@@ -22,6 +22,7 @@ class ValidDouble
         ValidDouble();
         bool is_valid_double(std::string);
         bool is_valid_double_range(std::string, double, double);
+        bool is_valid_double_positive(std::string);
         double get_double();
         ~ValidDouble() {};
 };
