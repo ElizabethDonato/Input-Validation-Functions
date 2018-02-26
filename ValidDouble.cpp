@@ -43,6 +43,8 @@ ValidDouble::ValidDouble()
 *************************************************/
 bool ValidDouble::is_valid_double (std::string inputString)
 {
+   goodInput = false;
+   
    //variables to test input
    char c;
    std::istringstream testStream(inputString);
@@ -79,6 +81,8 @@ bool ValidDouble::is_valid_double (std::string inputString)
 *************************************************/
 bool ValidDouble::is_valid_double_range (std::string inputString, double lowValue, double highValue)
 {
+   goodInput = false;
+   
    //variables to test input
    char c;
    std::stringstream testStream(inputString);
@@ -114,6 +118,8 @@ bool ValidDouble::is_valid_double_range (std::string inputString, double lowValu
 bool ValidInt::is_valid_double_positive(std::string inputString)
 
 {
+   goodInput = false;
+   
    //variables to test input
    char c;
    std::stringstream testStream(inputString);
