@@ -43,6 +43,8 @@ ValidInt::ValidInt()
 *************************************************/
 bool ValidInt::is_valid_int (std::string inputString)
 {
+   goodInput = false;
+   
    //variables to test input
    char c;
    std::istringstream testStream(inputString);
@@ -79,6 +81,8 @@ bool ValidInt::is_valid_int (std::string inputString)
 *************************************************/
 bool ValidInt::is_valid_int_range (std::string inputString, int lowValue, int highValue)
 {
+   goodInput = false;
+   
    //variables to test input
    char c;
    std::stringstream testStream(inputString);
@@ -114,6 +118,8 @@ bool ValidInt::is_valid_int_range (std::string inputString, int lowValue, int hi
 bool ValidInt::is_valid_int_positive(std::string inputString)
 
 {
+   goodInput = false;
+   
    //variables to test input
    char c;
    std::stringstream testStream(inputString);
