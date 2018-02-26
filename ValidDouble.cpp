@@ -102,6 +102,42 @@ bool ValidDouble::is_valid_double_range (std::string inputString, double lowValu
 }
 
 /*************************************************
+ *      ValidInt::is_valid_double_positive      *
+ *                                              *
+ * This function determines if the user         *
+ * has entered a positive valid double.         *
+ *                                              *
+ * Accepts: string (user-entered input)         *
+ *                                              *
+ * Returns: bool (status of input validation)   *
+*************************************************/
+bool ValidInt::is_valid_double_positive(std::string inputString)
+
+{
+   //variables to test input
+   char c;
+   std::stringstream testStream(inputString);
+
+   //if input is not a positive value, displays an error message and boolean value is not changed
+   if(!(testStream >> testInt) || (testStream >> std::ws && testStream.get(c)) ||
+     (testDouble < 1))
+   {
+        std::cout << "\nYou have not entered a positive value." << std::endl;
+   }
+
+   else
+   {
+        //If double input is positive, boolean value is changed to indicate valid inupt
+        //and value in string is converted to integer.
+        goodInput = true;
+        testDouble = std::stod(inputString);
+   }
+
+   return goodInput;
+}
+
+
+/*************************************************
  *      ValidDouble::get_double                 *
  *                                              *
  * This function returns the user-entered       *
