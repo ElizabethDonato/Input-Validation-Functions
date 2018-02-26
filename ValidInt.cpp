@@ -102,6 +102,42 @@ bool ValidInt::is_valid_int_range (std::string inputString, int lowValue, int hi
 }
 
 /*************************************************
+ *      ValidInt::is_valid_int_positive         *
+ *                                              *
+ * This function determines if the user         *
+ * has entered a positive valid integer.        *
+ *                                              *
+ * Accepts: string (user-entered input)         *
+ *                                              *
+ * Returns: bool (status of input validation)   *
+*************************************************/
+bool ValidInt::is_valid_int_positive(std::string inputString)
+
+{
+   //variables to test input
+   char c;
+   std::stringstream testStream(inputString);
+
+   //if input is not a positive integer, displays an error message and boolean value is not changed
+   if(!(testStream >> testInt) || (testStream >> std::ws && testStream.get(c)) ||
+     (testInt < 1))
+   {
+        std::cout << "\nYou have not entered a positive integer." << std::endl;
+   }
+
+   else
+   {
+        //If integer input is positive, boolean value is changed to indicate valid inupt
+        //and value in string is converted to integer.
+        goodInput = true;
+        testInt = std::stoi(inputString);
+   }
+
+   return goodInput;
+}
+
+
+/*************************************************
  *      ValidInt::get_int                       *
  *                                              *
  * This function returns the user-entered       *
