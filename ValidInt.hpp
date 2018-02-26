@@ -22,6 +22,7 @@ class ValidInt
         ValidInt();
         bool is_valid_int(std::string);
         bool is_valid_int_range(std::string, int, int);
+        bool is_valid_int_positive(std::string);
         int get_int();
         ~ValidInt() {};
 };
