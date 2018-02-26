@@ -82,8 +82,6 @@ int UserInput::get_input_range(int low, int high)
 *************************************************/
 int UserInput::get_input()
 {
-   lowest = low;
-   highest = high;
    //Gets and validates user input
    while (!validInput)
    {
