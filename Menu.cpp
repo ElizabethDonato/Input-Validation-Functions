@@ -74,8 +74,11 @@ int Menu::get_choice()
         validInput = userInput.is_valid_int_range(testString, lowest, highest);
    }
 
-   //Resets boolean value so indicate the user has already executed the program once
+   //Sets boolean value to indicate the user has already executed the program once
    firstMenu = false;
+   
+   //Resets boolean value so menu function can be used again if needed
+   validInput = false;
 
    //Returns user's choice to client program
    userChoice = userInput.get_int();
