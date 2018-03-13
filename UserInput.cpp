@@ -55,7 +55,7 @@ int UserInput::get_input_range(int low, int high)
    //Gets and validates user input
    while (!validInput)
    {
-        std::cout << "\nPlease enter an integer:  ";
+        std::cout << "\nPlease enter an integer between " << low << " and " << high << ":  ";
         std::getline(std::cin, testString);
         validInput = userInt.is_valid_int_range(testString, lowest, highest);
    }
